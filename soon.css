@@ -1,0 +1,151 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(/images/bg-pattern-desktop.svg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+.container{
+    display: flex;
+   
+    justify-content: space-between;
+}
+
+.contain1{
+    margin: 3.7em 0em 0em 10em;
+    max-width: 26em;
+}
+.text{
+    margin-top: 3.5em;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.text h1:first-child{
+    font-weight: lighter;
+    letter-spacing: .2em;
+    font-weight: 500;
+    color: rgb(247, 144, 161);
+    margin-bottom: 10px;
+}
+.text > h1{
+    font-size: 3.5em;
+    letter-spacing: .3em;
+}
+h1 + p{
+    line-height: 1.3em;
+    letter-spacing: .01em;
+    color: rgb(224, 39, 73);
+    font-weight: 500;
+    margin-top: 20px;
+}
+#email{
+    position: absolute;
+}
+#email input{
+    padding: 18px;
+    border-radius: 50px;
+    border: 1px solid rgba(46, 51, 47,.7);
+    border-right: none;
+    margin-top: 3em;
+    font-size: 13px;
+    opacity: .8;
+    width: 26em;
+    outline: none;
+}
+
+#email button {
+    padding: 15px 38px 15px 38px;
+    border: none;
+    border-radius: 30px;
+    background-color: pink;
+    position: relative;
+    top: 4px;
+    right: 55px;
+    outline: none;
+    width: 8em;
+}
+
+.mobile img{
+    margin-top: 2em;
+    display: none;
+}
+
+@media screen and ( max-width: 1061px){
+   .contain1{
+       margin-left: 5em;
+       transition: 2s;
+   }
+}
+
+@media screen and (max-width: 960px){
+    .contain1{
+        margin-left: 1em;
+        
+    }
+    .container2 .image {
+        width: 30em;
+    }
+
+    #email input {
+        width: 20em;
+    }
+}
+@media screen and (max-width:862px){
+    .container2 .image {
+        width: 24em;
+    }
+}
+@media screen and (max-width:770px){
+    .container2 .image img{
+        width: 23em;
+    }
+    .contain1{
+        max-width: 17em;
+    }
+}
+@media screen and (max-width: 730px){
+    .container2{
+        display: none;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+    }
+    .mobile img{
+        display: inherit;
+       
+        margin-top: 20px;
+        position: relative;
+        right: 3.35em;
+        width: inherit;
+    }
+ div .text{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     text-align: center;
+ }
+ .text h1{
+     text-align: center;
+    
+
+ }
+ .text h1:last-child{
+     color: red;
+ }
+  
+    #email input{
+        width: 18em;
+    }
+    #email button {
+        width: 5em;
+        
+    }
+}
