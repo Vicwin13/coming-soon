@@ -140,6 +140,9 @@ h1 + p{
  .text h1:last-child{
      color: red;
  }
+div .error{
+    display: none;
+}
   
     #email input{
         width: 18em;
